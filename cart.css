@@ -1,0 +1,423 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #003000;
+  font-family: Poppins, sans-serif;
+}
+.nav,
+.navSection,
+.navBox,
+.option,
+.optionBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* This is Navingation Section
+  In this three section
+  first : Logo, Delivery area
+  Second : Search Bar 
+  Third : Track Order, Add To Cart, More*/
+
+header {
+  top: 0;
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 11vh;
+  padding: 1px 0;
+  background-color: #033404;
+}
+header .nav {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 3 Section dimension */
+header .nav .navSection {
+  position: relative;
+  margin-left: 10px;
+  padding: 1px;
+}
+
+/* header .navSection .logo {
+  } */
+/* Delivery Select */
+header .navFirst .city {
+  margin-left: 15px;
+  width: 110px;
+  height: 25px;
+  border-radius: 20px;
+  padding-left: 25px;
+}
+/* Delivery Location Icon */
+header .navFirst .fa-crosshairs {
+  z-index: 1;
+  position: absolute;
+  right: 88px;
+}
+
+/* This is second section */
+/* header .nav .navSecond {
+  } */
+/* Search Bar */
+header .nav .navSecond input {
+  width: 250px;
+  border: 0;
+  padding-left: 15px;
+  height: 25px;
+  border-radius: 20px;
+}
+
+/* SearchBar Icon */
+header .nav .navSecond i {
+  position: absolute;
+  right: 15px;
+}
+
+/* Third Section */
+
+header .nav .navThird {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+/* navBar Third Section */
+header .nav .navThird .navBox {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  place-items: center;
+  width: 70px;
+  height: 50px;
+  /* background-color: aliceblue; */
+}
+header .nav .navThird .navBox button {
+  border-radius: 10px;
+  border: none;
+}
+.navThird .navbox2 {
+  position: relative;
+}
+
+/* third section 4 Icon */
+header .nav .navThird .navBox i {
+  font-size: 20px;
+}
+/* third section 4 Icon Name */
+header .nav .navThird .navBox div {
+  margin-top: 5px;
+  font-size: 10px;
+}
+/* Menu Bar in hidden  */
+header .nav .navForth {
+  /* flex-direction: column; */
+  display: none;
+}
+header .nav .navForth .navBox4 button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Add toCart */
+.cart {
+  position: relative;
+}
+.cartAmount {
+  z-index: 2;
+  position: absolute;
+  top: -40px;
+  border-radius: 5px;
+  right: -20px;
+  font-size: 20px;
+  width: auto;
+  padding: 0 5px;
+  background-color: red;
+}
+
+/* Shop container */
+.shopIndex {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopIndexRight {
+  position: relative;
+}
+.shopIndexRight img {
+  position: absolute;
+  top: -30px;
+  z-index: 0;
+  right: 0;
+}
+.shopCount {
+  font-weight: 900;
+  color: #022402;
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  top: -20px;
+  right: 21px;
+}
+
+.shopName {
+  padding: 5px 0;
+  transform: scale(1, 1.2);
+  color: rgb(0, 255, 0);
+  margin: 0;
+  font-weight: 900;
+  margin-left: 20px;
+}
+.shopLeft ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.shopLeft ul li {
+  margin: 10px;
+  width: auto;
+  text-align: center;
+  /* background-color: gray; */
+  color: white;
+}
+.shopLeft ul li:hover {
+  padding: 0 5px;
+  border-bottom: 1px solid green;
+}
+
+.shopLeft ul li:nth-child(1) {
+}
+.shopLeft ul li:nth-child(2) {
+  margin-left: 25px;
+}
+.shopLeft ul li:nth-child(3) {
+  margin-left: 25px;
+}
+.shopLeft ul li:nth-child(4) {
+}
+.shopLeft ul li:nth-child(5) {
+}
+.shopLeft ul li:nth-child(6) {
+}
+
+/* Shop Cart */
+.shop {
+  margin: 0 75px;
+  margin-top: 70px;
+  /* justify-content: space-between; */
+  display: flex;
+}
+.shopLeft {
+  width: 75%;
+  background-color: #022402;
+}
+.item {
+  border: 2px solid #212529;
+  border-radius: 4px;
+  width: 223px;
+  text-transform: capitalize;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  cursor: pointer;
+  align-items: center;
+  height: 15px;
+  color: #a7ffd3;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash {
+  font-size: 20px;
+  color: red;
+}
+
+.bi-plus-lg {
+  font-size: 20px;
+  color: green;
+}
+
+/**
+* ! Style rules for label and some button
+**/
+.text-center {
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+
+.HomeBtn,
+.checkout,
+.removeAll {
+  background-color: black;
+  color: white;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+
+.removeAll {
+  width: 85px;
+  align-self: center;
+  background-color: red;
+}
+
+.bi-x-lg {
+  color: red;
+  cursor: pointer;
+}
+
+/**
+* ! Style rules for Shopping Cart
+**/
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  /* justify-content: center; */
+  gap: 15px;
+}
+
+/**
+* ! Style rules for Cart-item
+**/
+
+.cart-item {
+  justify-content: space-between;
+  padding: 5px 15px 5px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+}
+.cart-item img {
+  margin-left: 5px;
+  width: 90px;
+  height: 90px;
+}
+.title-price-name {
+  text-align: center;
+  width: 25vh;
+  padding: 3px 6px;
+  background-color: white;
+  font-size: 16px;
+  margin: 0;
+  height: 15px;
+  border-radius: 5px;
+}
+
+.cart-item-price {
+  width: 50px;
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 6px;
+  height: 17px;
+}
+.priceTotal {
+  width: 75px;
+  color: aquamarine;
+  margin: 0;
+}
+
+.shopRight {
+  padding: 0 20px;
+  position: relative;
+  width: 25%;
+  background-color: #69c369;
+}
+.shopRight h2 {
+  width: 35vh;
+  margin: 5px 0;
+  padding: 10px 5px 5px 10px;
+}
+
+.orderSummary {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.text-center {
+  position: absolute;
+  margin: 0;
+  top: 38px;
+  right: 5px;
+}
+
+.discount,
+.shipName {
+  font-size: 17px;
+}
+#offer {
+  align-self: end;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: gold;
+  font-size: 15px;
+  width: 70px;
+  padding: 3px 6px;
+}
+
+.orderbutton {
+  display: flex;
+  flex-direction: column;
+}
+.buyAll {
+  box-shadow: 2px 2px 5px black, -2px -2px 5px gray;
+  border: 1px solid #022402;
+  border-radius: 50%;
+  padding: 5px 0;
+}
+.totalBox {
+  margin: 10px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.shippingAdrs,
+#getDiscount {
+  margin: 10px 0;
+  padding-left: 10px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: #003000;
+  border: 1px solid black;
+  height: 18px;
+}
